@@ -1,6 +1,6 @@
 # 기본형
 # 1. 정의하기
-from random import random
+
 
 
 def printHello():
@@ -16,6 +16,16 @@ def sum(a,b):
 sum(1,3)
 
 # 반환값이 있는 함수
+import random
 def getRandomNumber():
-    number = random.radint(1,10)
+    number = random.randint(1,10)
     return number
+
+print(getRandomNumber())
+
+# 매개변수와 반환값이 있는 함수
+def add(a, b):
+    result = a + b
+    return result
+
+print(add(5,6))
