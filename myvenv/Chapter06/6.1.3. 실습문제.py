@@ -13,10 +13,27 @@ def getRandomNuber():
 
 lotto_num = [] # 로또 번호를 저장할 리스트
 
-for i in range(6):
+# for i in range(6): # 반복 가능, 중복 값도 발생
+#     random_number = getRandomNuber()
+#     lotto_num.append(random_number)
+
+# 중복값 없이 작동 프로그램
+
+count = 0 # 현재 뽑은 숫자 개수
+
+while True:
+    if count > 5:
+        break
     random_number = getRandomNuber()
-    lotto_num.append(random_number)
+    if random_number not in lotto_num:
+        lotto_num.append(random_number)
+        count += 1
+        
     
     
 lotto_num.sort()
-print(lotto_num)
+# print(lotto_num)
+
+for num in lotto_num:
+    print(num, end = " ")
+
