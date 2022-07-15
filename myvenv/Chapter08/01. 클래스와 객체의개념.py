@@ -30,7 +30,7 @@ print("=============== 클래스를 사용한 경우 ===============")
 
 
 class Champion:
-    def __init__(self, name, health, attack):
+    def __init__(self, name, health, attack): # __init__ 인스턴스를 만들 때 사용
         self.name = name
         self.health = health
         self.attack = attack
